@@ -7,6 +7,88 @@
 	    <!-- Latest compiled and minified JavaScript -->
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 	    <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+	    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 15,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(25.3183089,51.5281132), // salam tower
+
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [
+                            {
+                                "featureType": "administrative",
+                                "elementType": "labels.text",
+                                "stylers": [
+                                    {
+                                        "visibility": "off"
+                                    }
+                                ]
+                            },
+                            {
+                                "featureType": "landscape",
+                                "elementType": "labels.text",
+                                "stylers": [
+                                    {
+                                        "visibility": "off"
+                                    }
+                                ]
+                            },
+                            {
+                                "featureType": "road",
+                                "elementType": "labels.text",
+                                "stylers": [
+                                    {
+                                        "visibility": "off"
+                                    }
+                                ]
+                            },
+                            {
+                                "featureType": "transit",
+                                "elementType": "labels.text",
+                                "stylers": [
+                                    {
+                                        "visibility": "off"
+                                    }
+                                ]
+                            },
+                            {
+                                "featureType": "water",
+                                "elementType": "geometry.fill",
+                                "stylers": [
+                                    {
+                                        "color": "#0099ff"
+                                    }
+                                ]
+                            }
+                        ]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(25.3183089,51.5281132),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>
 	</head>
 
 	<body>
@@ -20,7 +102,8 @@
         		<h2>+974 4482 1801</h2>
 				<h2>info@A101.qa<h2>
         	</div>
-        	<div class="col-md-12" id= "map">
+        	<div class="col-md-12" id= "map-column">
+        		 <div id="map"></div>
         	</div>
         </div>
 	</body>
