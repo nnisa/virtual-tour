@@ -8,25 +8,161 @@
   font-family: "Glober Thin";
   src: url("../assets/Glober/GloberThin.ttf") format("truetype");
 }
-/* line 20, ../sass/screen.scss */
+@font-face {
+  font-family: "Glober light";
+  src: url("../assets/Glober/GloberLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Glober Regular";
+  src: url("../assets/Glober/GloberRegular.ttf") format("truetype");
+}
+/* line 36, ../sass/screen.scss */
 div#header-placeholder {
   height: 100px;
   background-color: #e5e5e5;
 }
 
-/* line 25, ../sass/screen.scss */
-div#mac-photo {
-  background: linear-gradient(to right bottom, #0099cc 50%, #ffffff 50%);
-  height: 500;
+/* line 41, ../sass/screen.scss */
+h1 {
+  font-size: 40px;
+  font-family: "Glober Light";
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
+h2 {
+  font-size: 20px;
+  font-family: "Glober Light";
+  line-height: 30px;
+}
+
+/* line 52, ../sass/screen.scss */
+h3 {
+  font-size: 18px;
+  font-family: "Glober Light";
+  line-height: 30px;
+}
+
+/* line 58, ../sass/screen.scss */
+p {
+  font-size: 13px;
+  font-family: "Glober Light";
+  line-height: 25px;
+}
+
+/* line 65, ../sass/screen.scss */
+.container {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* line 71, ../sass/screen.scss */
+div#mac-photo {
+  background: linear-gradient(to right bottom, #0099cc 50%, #ffffff 50%);
+  height: 510px;
+}
+/* line 75, ../sass/screen.scss */
+div#mac-photo div#mac-ipad-image {
+  text-align: center;
+}
+/* line 78, ../sass/screen.scss */
+div#mac-photo div#mac-ipad-image img {
+  height: 350px;
+  margin-top: 135px;
+}
+
+/* line 85, ../sass/screen.scss */
 body#big-doha-picture {
   background-image: url("../assets/background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
   background-position: center;
+  z-index: 1;
   /*  background-color: black;
     opacity: 0.75;*/
+}
+
+/* line 96, ../sass/screen.scss */
+div#overlay {
+  background-color: Black;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* line 104, ../sass/screen.scss */
+.carousel {
+  position: relative;
+  text-align: center;
+}
+/* line 108, ../sass/screen.scss */
+.carousel img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* line 115, ../sass/screen.scss */
+.carousel-photo {
+  padding-bottom: 50px;
+}
+
+/* line 119, ../sass/screen.scss */
+div#contact-info > h2 {
+  line-height: 1;
+  text-align: center;
+}
+
+/* line 124, ../sass/screen.scss */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* line 131, ../sass/screen.scss */
+div#myCarousel {
+  text-align: center;
+  text-align: center;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 250px;
+}
+/* line 137, ../sass/screen.scss */
+div#myCarousel .item {
+  padding-bottom: 100px;
+}
+/* line 140, ../sass/screen.scss */
+div#myCarousel .name {
+  color: white;
+}
+/* line 143, ../sass/screen.scss */
+div#myCarousel .quote {
+  color: white;
+}
+
+/* line 150, ../sass/screen.scss */
+.icon svg#Layer_1 {
+  width: 75px;
+}
+/* line 152, ../sass/screen.scss */
+.icon svg#Layer_1 .st0 {
+  fill: none;
+  stroke: #0099CC;
+  stroke-miterlimit: 10;
+}
+/* line 158, ../sass/screen.scss */
+.icon .hand-image {
+  width: 20px;
+  margin-left: 28px;
+  margin-top: -56px;
+}
+
+/* line 165, ../sass/screen.scss */
+div#v-header {
+  padding-top: 20px;
 }

@@ -11,20 +11,75 @@
   font-family: "Glober Thin";
   src: url("../assets/Glober/GloberThin.ttf") format("truetype");
 }
+@font-face{
+  font-family: "Glober light";
+  src: url("../assets/Glober/GloberLight.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Glober Regular";
+  src: url("../assets/Glober/GloberRegular.ttf") format("truetype");
+}
+
+
 
 $header-font: Helvetica, sans-serif;
-$color: #ff000;
-$blue: #0099cc;
+$blue: #0099cc; 
+$dark-grey: #424242;
+$light-grey: #e5e5e5;
+
+
 $font-thin: "Glober Thin";
+$font-light: "Glober Light";
+$font-regular: "Glober Regular";
+
 
 div#header-placeholder {
     height: 100px;
     background-color: #e5e5e5;
 }
 
+h1 {
+  font-size: 40px;
+  font-family: $font-light;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: $font-light;
+  line-height: 30px;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: $font-light;
+  line-height: 30px;
+}
+
+p {
+  font-size: 13px;
+  font-family: $font-light;
+   line-height: 25px;
+}
+
+
+.container {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 div#mac-photo {
-    background: linear-gradient(to right bottom, #0099cc 50%, #FFFFFF 50%);
-    height: 500;
+    background: linear-gradient(to right bottom, $blue 50%, #FFFFFF 50%);
+    height: 510px;
+
+    div#mac-ipad-image {
+      text-align: center;
+      
+      img {
+        height: 350px;
+        margin-top: 135px;
+    }
+}
 }
 
 body#big-doha-picture {
@@ -33,6 +88,83 @@ body#big-doha-picture {
   background-attachment: fixed;
   background-size: 100%;
   background-position: center;
+  z-index: 1;
 /*  background-color: black;
   opacity: 0.75;*/
 }
+
+div#overlay{
+background-color:Black;
+opacity:0.5;
+height: 100%;
+width: 100%;
+position: absolute;
+}
+
+.carousel {
+    position: relative;
+    text-align: center;
+
+    img{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+}
+
+.carousel-photo {
+    padding-bottom: 50px;
+}
+
+div#contact-info > h2 {
+    line-height: 1;
+    text-align: center;
+}
+
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      margin: auto;
+  }
+div#myCarousel {
+    text-align: center;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 250px;
+    .item{
+    padding-bottom: 100px;
+    }
+  .name {
+      color: white;
+    }
+  .quote {
+      color: white;
+  }
+}
+
+
+.icon{
+  svg#Layer_1 {
+    width: 75px;
+    .st0 {
+      fill:none;
+      stroke:#0099CC;
+      stroke-miterlimit:10;
+         }
+    }
+    .hand-image {
+      width: 20px;
+      margin-left: 28px;
+      margin-top: -56px;
+  }
+}
+
+    div#v-header{
+    padding-top: 20px;
+}
+                
+
+
