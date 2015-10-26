@@ -1,0 +1,32 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*@import "compass/reset";*/
+/*@include font-face("Glober Thin", font-files("../assets/Glober/GloberLight.ttf"));*/
+@font-face {
+  font-family: "Glober Thin";
+  src: url("../assets/Glober/GloberThin.ttf") format("truetype");
+}
+/* line 20, ../sass/screen.scss */
+div#header-placeholder {
+  height: 100px;
+  background-color: #e5e5e5;
+}
+
+/* line 25, ../sass/screen.scss */
+div#mac-photo {
+  background: linear-gradient(to right bottom, #0099cc 50%, #ffffff 50%);
+  height: 500;
+}
+
+/* line 30, ../sass/screen.scss */
+body#big-doha-picture {
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center;
+  /*  background-color: black;
+    opacity: 0.75;*/
+}
