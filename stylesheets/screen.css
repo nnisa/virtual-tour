@@ -56,22 +56,7 @@ p {
   padding-right: 0px;
 }
 
-/* line 71, ../sass/screen.scss */
-div#mac-photo {
-  background: linear-gradient(to right bottom, #0099cc 50%, #ffffff 50%);
-  height: 510px;
-}
-/* line 75, ../sass/screen.scss */
-div#mac-photo div#mac-ipad-image {
-  text-align: center;
-}
-/* line 78, ../sass/screen.scss */
-div#mac-photo div#mac-ipad-image img {
-  height: 350px;
-  margin-top: 135px;
-}
-
-/* line 85, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 body#big-doha-picture {
   background-image: url("../assets/background.png");
   background-repeat: no-repeat;
@@ -83,7 +68,70 @@ body#big-doha-picture {
     opacity: 0.75;*/
 }
 
-/* line 96, ../sass/screen.scss */
+/* Take a tour start *************************************************************************/
+/* Take a tour end  *************************************************************************/
+/* about start *************************************************************************/
+/* line 94, ../sass/screen.scss */
+div#mac-photo {
+  background: linear-gradient(to right bottom, #0099cc 50%, #ffffff 50%);
+  height: 600px;
+}
+/* line 98, ../sass/screen.scss */
+div#mac-photo div#mac-ipad-image {
+  text-align: center;
+}
+/* line 101, ../sass/screen.scss */
+div#mac-photo div#mac-ipad-image img {
+  height: 350px;
+  margin-top: 135px;
+}
+
+/* line 108, ../sass/screen.scss */
+.icon svg#Layer_1 {
+  width: 65px;
+}
+/* line 110, ../sass/screen.scss */
+.icon svg#Layer_1 .st0 {
+  fill: none;
+  stroke: #0099CC;
+  stroke-miterlimit: 10;
+}
+/* line 116, ../sass/screen.scss */
+.icon .hand-image {
+  width: 16px;
+  margin-left: 25px;
+  margin-top: -49px;
+}
+
+/* line 123, ../sass/screen.scss */
+div#v-header {
+  padding-top: 20px;
+}
+
+/* line 127, ../sass/screen.scss */
+div#v-header-2 {
+  padding-bottom: 10px;
+}
+
+/* line 132, ../sass/screen.scss */
+div#feature {
+  padding-top: 10px;
+}
+
+/* line 136, ../sass/screen.scss */
+span {
+  display: inline-block;
+  width: 0;
+  height: 3em;
+  border-left: 3px solid #0099cc;
+  margin-top: 50px;
+  margin-bottom: -66px;
+  margin-left: 10px;
+}
+
+/* about end *************************************************************************/
+/* Review start *************************************************************************/
+/* line 150, ../sass/screen.scss */
 div#overlay {
   background-color: Black;
   opacity: 0.5;
@@ -92,30 +140,30 @@ div#overlay {
   position: absolute;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .carousel {
   position: relative;
   text-align: center;
 }
-/* line 108, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .carousel img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .carousel-photo {
   padding-bottom: 50px;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 div#contact-info > h2 {
   line-height: 1;
   text-align: center;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   height: 200px;
@@ -124,7 +172,7 @@ div#contact-info > h2 {
   margin: auto;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 div#myCarousel {
   text-align: center;
   text-align: center;
@@ -132,48 +180,25 @@ div#myCarousel {
   padding-right: 250px;
   padding-top: 250px;
 }
-/* line 137, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 div#myCarousel .item {
   padding-bottom: 100px;
 }
-/* line 140, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 div#myCarousel .name {
   color: white;
 }
-/* line 143, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 div#myCarousel .quote {
   color: white;
 }
 
-/* line 150, ../sass/screen.scss */
-.icon svg#Layer_1 {
-  width: 75px;
-}
-/* line 152, ../sass/screen.scss */
-.icon svg#Layer_1 .st0 {
-  fill: none;
-  stroke: #0099CC;
-  stroke-miterlimit: 10;
-}
-/* line 158, ../sass/screen.scss */
-.icon .hand-image {
-  width: 20px;
-  margin-left: 28px;
-  margin-top: -56px;
-}
-
-/* line 165, ../sass/screen.scss */
-div#v-header {
-  padding-top: 20px;
-}
-
-/* line 169, ../sass/screen.scss */
-div#v-header-2 {
-  padding-bottom: 30px;
-}
-
-/* line 172, ../sass/screen.scss */
+/* Review end *************************************************************************/
+/* Contact start *************************************************************************/
+/* line 206, ../sass/screen.scss */
 #map {
   width: 100%;
   height: 500px;
 }
+
+/* Contact end *************************************************************************/

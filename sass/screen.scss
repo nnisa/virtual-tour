@@ -68,19 +68,6 @@ p {
     padding-right: 0px;
 }
 
-div#mac-photo {
-    background: linear-gradient(to right bottom, $blue 50%, #FFFFFF 50%);
-    height: 510px;
-
-    div#mac-ipad-image {
-      text-align: center;
-      
-      img {
-        height: 350px;
-        margin-top: 135px;
-    }
-}
-}
 
 body#big-doha-picture {
   background-image: url("../assets/background.png");
@@ -93,6 +80,73 @@ body#big-doha-picture {
   opacity: 0.75;*/
 }
 
+
+/* Take a tour start *************************************************************************/
+
+
+
+
+/* Take a tour end  *************************************************************************/
+
+
+
+/* about start *************************************************************************/
+div#mac-photo {
+    background: linear-gradient(to right bottom, $blue 50%, #FFFFFF 50%);
+    height: 600px;
+
+    div#mac-ipad-image {
+      text-align: center;
+      
+      img {
+        height: 350px;
+        margin-top: 135px;
+    }
+}
+}
+.icon{
+  svg#Layer_1 {
+    width: 65px;
+    .st0 {
+      fill:none;
+      stroke:#0099CC;
+      stroke-miterlimit:10;
+         }
+    }
+    .hand-image {
+    width: 16px;
+    margin-left: 25px;
+    margin-top: -49px;
+}
+}
+
+  div#v-header{
+    padding-top: 20px;
+  }
+
+  div#v-header-2 {
+    padding-bottom: 10px;
+  }
+
+
+div#feature {
+    padding-top: 10px;
+  }
+
+span {
+    display: inline-block;
+    width: 0;
+    height: 3em;
+    border-left: 3px solid #0099cc;
+    margin-top: 50px;
+    margin-bottom: -66px;
+    margin-left: 10px;
+}
+/* about end *************************************************************************/
+
+
+
+/* Review start *************************************************************************/
 div#overlay{
 background-color:Black;
 opacity:0.5;
@@ -144,34 +198,13 @@ div#myCarousel {
       color: white;
   }
 }
+/* Review end *************************************************************************/
 
 
-.icon{
-  svg#Layer_1 {
-    width: 75px;
-    .st0 {
-      fill:none;
-      stroke:#0099CC;
-      stroke-miterlimit:10;
-         }
-    }
-    .hand-image {
-      width: 20px;
-      margin-left: 28px;
-      margin-top: -56px;
-  }
-}
 
-    div#v-header{
-    padding-top: 20px;
-}
-
-  div#v-header-2 {
-    padding-bottom: 30px;
-}
+/* Contact start *************************************************************************/
 #map {
   width: 100%;
   height: 500px;
-}
-
-
+  }
+/* Contact end *************************************************************************/
