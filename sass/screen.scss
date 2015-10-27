@@ -83,8 +83,15 @@ body#big-doha-picture {
 
 /* Take a tour start *************************************************************************/
 
-
-
+.fe_daily {
+  display: none !important;
+}
+.fe_title {
+    display: none !important;
+}
+span.fe_dir {
+    display: none !important;
+}
 
 /* Take a tour end  *************************************************************************/
 

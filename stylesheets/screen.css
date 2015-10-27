@@ -69,56 +69,71 @@ body#big-doha-picture {
 }
 
 /* Take a tour start *************************************************************************/
+/* line 86, ../sass/screen.scss */
+.fe_daily {
+  display: none !important;
+}
+
+/* line 89, ../sass/screen.scss */
+.fe_title {
+  display: none !important;
+}
+
+/* line 92, ../sass/screen.scss */
+span.fe_dir {
+  display: none !important;
+}
+
 /* Take a tour end  *************************************************************************/
 /* about start *************************************************************************/
-/* line 94, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 div#mac-photo {
   background: linear-gradient(to right bottom, #0099cc 50%, #ffffff 50%);
   height: 600px;
 }
-/* line 98, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 div#mac-photo div#mac-ipad-image {
   text-align: center;
 }
-/* line 101, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 div#mac-photo div#mac-ipad-image img {
   height: 350px;
   margin-top: 135px;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .icon svg#Layer_1 {
   width: 65px;
 }
-/* line 110, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .icon svg#Layer_1 .st0 {
   fill: none;
   stroke: #0099CC;
   stroke-miterlimit: 10;
 }
-/* line 116, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .icon .hand-image {
   width: 16px;
   margin-left: 25px;
   margin-top: -49px;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 div#v-header {
   padding-top: 20px;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 div#v-header-2 {
   padding-bottom: 10px;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 div#feature {
   padding-top: 10px;
 }
 
-/* line 136, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 span {
   display: inline-block;
   width: 0;
@@ -131,7 +146,7 @@ span {
 
 /* about end *************************************************************************/
 /* Review start *************************************************************************/
-/* line 150, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 div#overlay {
   background-color: Black;
   opacity: 0.5;
@@ -140,30 +155,30 @@ div#overlay {
   position: absolute;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .carousel {
   position: relative;
   text-align: center;
 }
-/* line 162, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .carousel img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .carousel-photo {
   padding-bottom: 50px;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 div#contact-info > h2 {
   line-height: 1;
   text-align: center;
 }
 
-/* line 178, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   height: 200px;
@@ -172,7 +187,7 @@ div#contact-info > h2 {
   margin: auto;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 div#myCarousel {
   text-align: center;
   text-align: center;
@@ -180,22 +195,22 @@ div#myCarousel {
   padding-right: 250px;
   padding-top: 250px;
 }
-/* line 191, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 div#myCarousel .item {
   padding-bottom: 100px;
 }
-/* line 194, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 div#myCarousel .name {
   color: white;
 }
-/* line 197, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 div#myCarousel .quote {
   color: white;
 }
 
 /* Review end *************************************************************************/
 /* Contact start *************************************************************************/
-/* line 206, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 #map {
   width: 100%;
   height: 500px;
