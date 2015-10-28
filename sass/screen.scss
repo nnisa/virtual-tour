@@ -82,12 +82,7 @@ body#big-doha-picture {
 
 
 /* Take a tour start *************************************************************************/
-
-
-
-/* Take a tour end  *************************************************************************/
-
-@font-face {
+       @font-face {
         font-family: 'weather';
         src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
         src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
@@ -182,7 +177,7 @@ body#big-doha-picture {
 
     #weather li {
       background: black;
-      background: rgba(255,255,255,0.90);
+      background: rgba(255,255,255,0);
       padding: 20px;
       display: inline-block;
       border-radius: 5px;
@@ -191,6 +186,10 @@ body#big-doha-picture {
     #weather .currently {
       margin: 0 20px;
     }
+
+
+/* Take a tour end  *************************************************************************/
+
 
 /* about start *************************************************************************/
 div#mac-photo {
@@ -273,13 +272,25 @@ button.enquire-now-button {
 
 
 /******************hexagon*****************************/
+
+.collection-slide-1 > .hexagon {
+  background-image: url(http://csshexagon.com/img/meow.jpg);
+}
+
+.collection-slide-2 > .hexagon {
+  background-image: url(http://csshexagon.com/img/meow.jpg);
+}
+
+.collection-slide-3 > .hexagon {
+  background-image: url(http://csshexagon.com/img/meow.jpg);
+}
+
 .hexagon {
   position: relative;
-  width: 110px; 
-  height: 63.51px;
-  margin: 31.75px 0;
-  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/f3/f3/1c/f3f31c3ed387f547e076940a9a910a8f.gif);
-  background-size: auto 127.0171px;
+  width: 90px; 
+  height: 51.96px;
+  margin: 25.98px 0;
+  background-size: auto 103.9230px;
   background-position: center;
 }
 
@@ -287,14 +298,14 @@ button.enquire-now-button {
 .hexBottom {
   position: absolute;
   z-index: 1;
-  width: 77.78px;
-  height: 77.78px;
+  width: 63.64px;
+  height: 63.64px;
   overflow: hidden;
   -webkit-transform: scaleY(0.5774) rotate(-45deg);
   -ms-transform: scaleY(0.5774) rotate(-45deg);
   transform: scaleY(0.5774) rotate(-45deg);
   background: inherit;
-  left: 16.11px;
+  left: 13.18px;
 }
 
 /*counter transform the bg image on the caps*/
@@ -302,11 +313,11 @@ button.enquire-now-button {
 .hexBottom:after {
   content: "";
   position: absolute;
-  width: 110.0000px;
-  height: 63.50852961085884px;
-  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-31.7543px);
-  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-31.7543px);
-  transform:          rotate(45deg) scaleY(1.7321) translateY(-31.7543px);
+  width: 90.0000px;
+  height: 51.96152422706632px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-25.9808px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-25.9808px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-25.9808px);
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -314,7 +325,7 @@ button.enquire-now-button {
 }
 
 .hexTop {
-  top: -38.8909px;
+  top: -31.8198px;
 }
 
 .hexTop:after {
@@ -322,7 +333,7 @@ button.enquire-now-button {
 }
 
 .hexBottom {
-  bottom: -38.8909px;
+  bottom: -31.8198px;
 }
 
 .hexBottom:after {
@@ -334,13 +345,17 @@ button.enquire-now-button {
   position: absolute;
   top: 0.0000px;
   left: 0;
-  width: 110.0000px;
-  height: 63.5085px;
+  width: 90.0000px;
+  height: 51.9615px;
   z-index: 2;
   background: inherit;
 }
 
-
+svg.collection-hexagon {
+    width: 110px;
+    margin-top: -116px;
+    margin-left: -10px;
+}
 
 /* Collections end *************************************************************************/
 
