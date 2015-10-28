@@ -9,11 +9,40 @@
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'></script>
     <script src='js/jquery.color-RGBa-patch.js'></script>
     <script src='js/example.js'></script>
-	<!-- animsition.css>
-	<link rel="stylesheet" href="dist/css/animsition.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="dist/js/animsition.min.js"></script-->
+    <!-- Weather script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.simpleWeather.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $.simpleWeather({
+            location: 'Doha, Qatar',
+            woeid: '',
+            unit: 'c',
+            success: function(weather) {
+                // html = '<li class="currently">'+weather.currently+'</li>';
+                html = '<h2 id="weather-icon"><i class="icon-'+weather.code+'"></i></h2>';
+                html += '<li class="currently">'+weather.currently+'</li>';
+                // html = '<li class="currently">'+weather.currently+'</li>';
+                html += '<h2 id="temp" class="weather-temp">'+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+              
+          
+              $("#weather").html(html);
+            },
+            error: function(error) {
+              $("#weather").html('<p>'+error+'</p>');
+            }
+          });
+        });
+    </script>
+
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+
+    <script type="text/javascript">
+        $document.ready(function(){
+            document.getElementsByClassName("fe_daily").css("display","none");
+        });
+    </script>
+
 	</head>
 
 
@@ -30,8 +59,8 @@
                     <ul>
                 </div>
     	   </div>
-           <div class="weather">
-                <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=25.3183089&lon=51.5281132&name=Doha&color=white&font=Georgia&units=uk"> </iframe>
+           <div class = "col-md-6" class="weather-class">
+                <div id="weather"></div>
            </div>
 
         </div>

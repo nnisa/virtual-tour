@@ -83,19 +83,114 @@ body#big-doha-picture {
 
 /* Take a tour start *************************************************************************/
 
-.fe_daily {
-  display: none !important;
-}
-.fe_title {
-    display: none !important;
-}
-span.fe_dir {
-    display: none !important;
-}
+
 
 /* Take a tour end  *************************************************************************/
 
+@font-face {
+        font-family: 'weather';
+        src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
+        src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+             url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+             url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
 
+    #weather {
+      width: 500px;
+      margin: 0px auto;
+      text-align: center;
+      text-transform: uppercase;
+      color: black;
+    }
+
+
+    i {
+      color: black;
+      font-family: weather;
+      font-size: 150px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 1.0;
+      padding-bottom: 0px;
+    }
+
+    .icon-0:before { content: ":"; }
+    .icon-1:before { content: "p"; }
+    .icon-2:before { content: "S"; }
+    .icon-3:before { content: "Q"; }
+    .icon-4:before { content: "S"; }
+    .icon-5:before { content: "W"; }
+    .icon-6:before { content: "W"; }
+    .icon-7:before { content: "W"; }
+    .icon-8:before { content: "W"; }
+    .icon-9:before { content: "I"; }
+    .icon-10:before { content: "W"; }
+    .icon-11:before { content: "I"; }
+    .icon-12:before { content: "I"; }
+    .icon-13:before { content: "I"; }
+    .icon-14:before { content: "I"; }
+    .icon-15:before { content: "W"; }
+    .icon-16:before { content: "I"; }
+    .icon-17:before { content: "W"; }
+    .icon-18:before { content: "U"; }
+    .icon-19:before { content: "Z"; }
+    .icon-20:before { content: "Z"; }
+    .icon-21:before { content: "Z"; }
+    .icon-22:before { content: "Z"; }
+    .icon-23:before { content: "Z"; }
+    .icon-24:before { content: "E"; }
+    .icon-25:before { content: "E"; }
+    .icon-26:before { content: "3"; }
+    .icon-27:before { content: "a"; }
+    .icon-28:before { content: "A"; }
+    .icon-29:before { content: "a"; }
+    .icon-30:before { content: "A"; }
+    .icon-31:before { content: "6"; }
+    .icon-32:before { content: "1"; }
+    .icon-33:before { content: "6"; }
+    .icon-34:before { content: "1"; }
+    .icon-35:before { content: "W"; }
+    .icon-36:before { content: "1"; }
+    .icon-37:before { content: "S"; }
+    .icon-38:before { content: "S"; }
+    .icon-39:before { content: "S"; }
+    .icon-40:before { content: "M"; }
+    .icon-41:before { content: "W"; }
+    .icon-42:before { content: "I"; }
+    .icon-43:before { content: "W"; }
+    .icon-44:before { content: "a"; }
+    .icon-45:before { content: "S"; }
+    .icon-46:before { content: "U"; }
+    .icon-47:before { content: "S"; }
+
+    #weather h2 {
+      margin: 0 0 8px;
+      color: black;
+      font-size: 140px;
+      font-weight: 300;
+      text-align: center;
+      text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    #weather ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    #weather li {
+      background: black;
+      background: rgba(255,255,255,0.90);
+      padding: 20px;
+      display: inline-block;
+      border-radius: 5px;
+    }
+
+    #weather .currently {
+      margin: 0 20px;
+    }
 
 /* about start *************************************************************************/
 div#mac-photo {
@@ -150,6 +245,105 @@ span {
     margin-left: 10px;
 }
 /* about end *************************************************************************/
+
+
+/* Collections start *************************************************************************/
+div#collections-title-section {
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1#collections-title {
+    margin-bottom: -20px;
+}
+
+div#enquire-button {
+    padding-top: 20px;
+}
+
+button.enquire-now-button {
+    font-size: 12;
+    color: 505050;
+    background-color: #f1bc42;
+    border: 0px;
+    width: 100;
+    height: 40;
+}
+
+
+
+/******************hexagon*****************************/
+.hexagon {
+  position: relative;
+  width: 110px; 
+  height: 63.51px;
+  margin: 31.75px 0;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/f3/f3/1c/f3f31c3ed387f547e076940a9a910a8f.gif);
+  background-size: auto 127.0171px;
+  background-position: center;
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 77.78px;
+  height: 77.78px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 16.11px;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 110.0000px;
+  height: 63.50852961085884px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-31.7543px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-31.7543px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-31.7543px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -38.8909px;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -38.8909px;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 110.0000px;
+  height: 63.5085px;
+  z-index: 2;
+  background: inherit;
+}
+
+
+
+/* Collections end *************************************************************************/
+
 
 
 
@@ -210,8 +404,121 @@ div#myCarousel {
 
 
 /* Contact start *************************************************************************/
+.form-control::-webkit-input-placeholder { color: #0096ff; font-family: $font-light; }
+.form-control:-moz-placeholder { color: #0096ff; font-family: $font-light;}
+.form-control::-moz-placeholder { color: #0096ff; font-family: $font-light;}
+.form-control:-ms-input-placeholder { color: #0096ff; font-family: $font-light;}
+
+
+div#form-container {
+    margin: 0 auto;
+}
+
+
+h2#subscribe {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: $blue;
+}
+
+div#exampleInputEmail1{
+  color: #0096ff;
+}
+
+input#first-name, input#last-name,input#exampleInputEmail1 {
+    background: rgba(0,153,255,0.1);
+    border: 0px !important;
+}
+
+.form-group {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+div#form-container {
+    text-align: center;
+    text-align: center;
+    border: solid;
+    border-width: 1px; 
+    border-color: #e5e5e5;
+    margin-top: 50px;
+    width: 380px;
+    background-color: white;
+}
+
+form{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+div#form{
+  padding-top: 105px;
+  z-index: 1;
+  position: relative;
+}
+.form-control{
+  border-radius: 0px !important;
+}
+.form-hex{
+  fill:#FFFFFF;
+  stroke:#E5E5E5;
+  stroke-miterlimit:10;
+}
+.form-hex-inner{
+  fill:#0099CC;
+}
+
+div#form-top-icon > svg#Layer_1 {
+    width: 40px;
+    margin-top: -21px;
+}
+
+div#form-top-icon {
+    margin-bottom: -25px;
+    z-index: 0;
+    text-align: center;
+}
+
+button.btn.btn-default {
+    width: 100%;
+    background: #0099cc;
+    border: 0px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+
+div#contact-info {
+    padding-top: 50px;
+}
+.social{
+  fill:#424242;
+}
+.social-bkgd{
+  fill:none;
+  stroke:#0099CC;
+  stroke-miterlimit:10;
+}
+
+div#social-media {
+    width: 110px;
+    margin-left: 284px;
+    padding-top: 35px;
+    margin-bottom: -25px;
+}
 #map {
   width: 100%;
-  height: 500px;
+  height: 300px;
+  z-index: 0;
   }
+
+div#map-column {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: -225px;
+}
+
+
 /* Contact end *************************************************************************/
