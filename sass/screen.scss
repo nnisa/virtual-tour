@@ -93,15 +93,6 @@ body#big-doha-picture {
         font-style: normal;
     }
 
-    #weather {
-      width: 500px;
-      margin: 0px auto;
-      text-align: center;
-      text-transform: uppercase;
-      color: black;
-    }
-
-
     i {
       color: black;
       font-family: weather;
@@ -146,7 +137,7 @@ body#big-doha-picture {
     .icon-31:before { content: "6"; }
     .icon-32:before { content: "1"; }
     .icon-33:before { content: "6"; }
-    .icon-34:before { content: "1"; }
+    .icon-34:before { content: "1"; color:#f1bc42}
     .icon-35:before { content: "W"; }
     .icon-36:before { content: "1"; }
     .icon-37:before { content: "S"; }
@@ -161,31 +152,47 @@ body#big-doha-picture {
     .icon-46:before { content: "U"; }
     .icon-47:before { content: "S"; }
 
-    #weather h2 {
-      margin: 0 0 8px;
-      color: black;
-      font-size: 140px;
-      font-weight: 300;
+
+    #weather {
+      width: 500px;
+      margin: 0px auto;
       text-align: center;
-      text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+      text-transform: uppercase;
+      color: black;
+      padding-top: 300px;
+      margin-left: 45px;
+        h2 {
+        margin: 0 0 8px;
+        color: white;
+        font-size: 140px;
+        font-weight: 300;
+        text-align: left;
+        text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+        margin-top: 10px;
+        }
+        ul {
+        margin: 0;
+        padding: 0;
+        }
+        li {
+        background: black;
+        background: rgba(255,255,255,0);
+        padding: 20px;
+        display: inline-block;
+        border-radius: 5px;
+        }
+        .currently {
+        color: white;
+        margin-bottom: 40px;
+        margin-left: -250px;
+        font-size: 20px;
+        font-family: $font-light;
+        }
     }
 
-    #weather ul {
-      margin: 0;
-      padding: 0;
-    }
-
-    #weather li {
-      background: black;
-      background: rgba(255,255,255,0);
-      padding: 20px;
-      display: inline-block;
-      border-radius: 5px;
-    }
-
-    #weather .currently {
-      margin: 0 20px;
-    }
+    h2#weather-icon {
+    margin-bottom: -100px;
+  }
 
 
 /* Take a tour end  *************************************************************************/
