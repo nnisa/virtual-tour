@@ -18,11 +18,12 @@
             woeid: '',
             unit: 'c',
             success: function(weather) {
+
                 // html = '<li class="currently">'+weather.currently+'</li>';
-                html = '<h2 id="weather-icon"><i class="icon-'+weather.code+'"></i></h2>';
-                html += '<li class="currently">'+weather.currently+'</li>';
+                html = '<div id="weather-info" class="col-md-6"><div id="weather-icon" class="col-md-6"><h2 id="weather-icon"><i class="icon-'+weather.code+'"></i></h2></div>';
+                html += '<div class="col-md-6" id="current-situation"><li class="currently">'+weather.currently+'</li></div>';
                 // html = '<li class="currently">'+weather.currently+'</li>';
-                html += '<h2 id="temp" class="weather-temp">'+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+                html += '<div class="col-md-12" id="temperature"><h2 id="temp" class="weather-temp">'+weather.temp+'&deg;'+weather.units.temp+'</h2></div></div>';
               
           
               $("#weather").html(html);
@@ -39,6 +40,7 @@
 
 
 	<body id="big-doha-picture">
+        <div id="overlay"></div>
         <div class="container">
     	   <div class="animsition">
                 <div class="nav-wrap">

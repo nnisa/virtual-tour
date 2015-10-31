@@ -70,12 +70,12 @@ p {
 
 
 body#big-doha-picture {
-  background-image: url("../assets/background.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  background-position: center;
+  background: url("../assets/background.png") no-repeat center center fixed;
   z-index: 1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 /*  background-color: black;
   opacity: 0.75;*/
 }
@@ -133,7 +133,7 @@ body#big-doha-picture {
     .icon-27:before { content: "a"; }
     .icon-28:before { content: "A"; }
     .icon-29:before { content: "a"; }
-    .icon-30:before { content: "A"; }
+    .icon-30:before { content: "A"; color:#f1bc42}
     .icon-31:before { content: "6"; }
     .icon-32:before { content: "1"; }
     .icon-33:before { content: "6"; }
@@ -159,16 +159,12 @@ body#big-doha-picture {
       text-align: center;
       text-transform: uppercase;
       color: black;
-      padding-top: 300px;
-      margin-left: 45px;
         h2 {
-        margin: 0 0 8px;
         color: white;
         font-size: 140px;
         font-weight: 300;
         text-align: left;
         text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
-        margin-top: 10px;
         }
         ul {
         margin: 0;
@@ -181,20 +177,20 @@ body#big-doha-picture {
         display: inline-block;
         border-radius: 5px;
         }
-        .currently {
-        color: white;
-        margin-bottom: 40px;
-        margin-left: -250px;
-        font-size: 20px;
-        font-family: $font-light;
-        }
-    }
-
-    h2#weather-icon {
-    margin-bottom: -100px;
+      }
+    div#current-situation {
+      padding-top: 65px;
+      color: white;
+      font-family: $font-light;
   }
-
-
+    div#weather-icon {
+      width: 50px;
+          } 
+    div#weather-info {
+      bottom: 0;
+      position: fixed;
+      padding-bottom: 80px;
+}
 /* Take a tour end  *************************************************************************/
 
 
