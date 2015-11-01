@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Navigation</title>
+</head>
+
+<body>
+	<nav>
+		<ul class="navigation-list">
+			 <li><a href="index.html" class="active">Take a Tour</a></li>
+			 <li><a href="about.html">About</a></li>
+			 <li><a href="collections.html">Collections</a></li>
+			 <li><a href="review.html">Review</a></li>
+			 <li><a href="contact.html">Contact</a></li>
+		</ul>
+		<div id="magic-bar"></div>
+	</nav>
+</body>
+
+<style type="text/css">
+
+.navigation-lists { display: inline; 
+						text-decoration: none;
+					}
+
+
+
+
+</style>
+
+<script type="text/javascript">
+
+	var original_width= $('.navigation-list li a.active').width();
+	var original_position= $('.navigation-list li a.active').position().left();
+	$('#magic-bar').width(original_width);
+	$('#magic-bar').css('left', original_position)
+
+	$('.navigation-list li').hover(function hover_in (argument) {
+		 var hover_length = $(this).width()
+		 var hover_position = $(this).position().left();
+		 $('#magic-bar').width(hover_length);
+		$('#magic-bar').css('left', hover_position)
+	}, function hover_out(){
+		$('#magic-bar').width(original_width);
+		$('#magic-bar').css('left', original_position)
+		}
+	);
+
+	$('.navigation-list li').click(function hover_in (argument){
+		original_width = $(this).width()
+		original_position = $(this).position().left();
+		$('#magic-bar').width(original_width);
+		$('#magic-bar').css('left', original_position)
+	});
+
+</script>
+
+
+
+</html>
+
+
+
+

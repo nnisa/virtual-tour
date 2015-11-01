@@ -79,7 +79,28 @@ body#big-doha-picture {
 /*  background-color: black;
   opacity: 0.75;*/
 }
+/* Navigation start *************************************************************************/
 
+nav ul{
+  background: #43a286;
+  overflow: hidden;
+  color: white;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+}
+nav ul li{
+  display: inline-block;
+  padding: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Navigation end *************************************************************************/
 
 /* Take a tour start *************************************************************************/
        @font-face {
@@ -519,10 +540,34 @@ button.btn.btn-default {
 div#contact-info {
     padding-top: 50px;
 }
-.social{
+
+
+
+
+.facebook-1{
   fill:#424242;
 }
-.social-bkgd{
+.facebook-2{
+  fill:none;
+  stroke:#0099CC;
+  stroke-miterlimit:10;
+}
+
+
+.linkedin-1{
+  fill:#424242;
+}
+.linkedin-2{
+  fill:none;
+  stroke:#0099CC;
+  stroke-miterlimit:10;
+}
+
+
+.linkedin-1{
+  fill:#424242;
+}
+.linkedin-2{
   fill:none;
   stroke:#0099CC;
   stroke-miterlimit:10;
