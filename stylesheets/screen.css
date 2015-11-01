@@ -563,9 +563,21 @@ svg.collection-hexagon {
   margin-left: -10px;
 }
 
+/* line 362, ../sass/screen.scss */
+.owl-wrapper-outer {
+  padding-top: 85px;
+  padding-left: 10px;
+}
+
+/* line 367, ../sass/screen.scss */
+div#owl-demo {
+  padding-left: 220px;
+  padding-right: 110px;
+}
+
 /* Collections end *************************************************************************/
 /* Review start *************************************************************************/
-/* line 369, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 div#overlay {
   background-color: Black;
   opacity: 0.5;
@@ -574,30 +586,30 @@ div#overlay {
   position: absolute;
 }
 
-/* line 377, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .carousel {
   position: relative;
   text-align: center;
 }
-/* line 381, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 .carousel img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
 }
 
-/* line 388, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 .carousel-photo {
   padding-bottom: 50px;
 }
 
-/* line 392, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 div#contact-info > h2 {
   line-height: 1;
   text-align: center;
 }
 
-/* line 397, ../sass/screen.scss */
+/* line 406, ../sass/screen.scss */
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   height: 200px;
@@ -606,7 +618,7 @@ div#contact-info > h2 {
   margin: auto;
 }
 
-/* line 404, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 div#myCarousel {
   text-align: center;
   text-align: center;
@@ -614,51 +626,51 @@ div#myCarousel {
   padding-right: 250px;
   padding-top: 250px;
 }
-/* line 410, ../sass/screen.scss */
+/* line 419, ../sass/screen.scss */
 div#myCarousel .item {
   padding-bottom: 100px;
 }
-/* line 413, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 div#myCarousel .name {
   color: white;
 }
-/* line 416, ../sass/screen.scss */
+/* line 425, ../sass/screen.scss */
 div#myCarousel .quote {
   color: white;
 }
 
 /* Review end *************************************************************************/
 /* Contact start *************************************************************************/
-/* line 425, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 .form-control::-webkit-input-placeholder {
   color: #0096ff;
   font-family: "Glober Light";
 }
 
-/* line 426, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 .form-control:-moz-placeholder {
   color: #0096ff;
   font-family: "Glober Light";
 }
 
-/* line 427, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 .form-control::-moz-placeholder {
   color: #0096ff;
   font-family: "Glober Light";
 }
 
-/* line 428, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 .form-control:-ms-input-placeholder {
   color: #0096ff;
   font-family: "Glober Light";
 }
 
-/* line 431, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 div#form-container {
   margin: 0 auto;
 }
 
-/* line 436, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 h2#subscribe {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -667,25 +679,25 @@ h2#subscribe {
   color: #0099cc;
 }
 
-/* line 444, ../sass/screen.scss */
+/* line 453, ../sass/screen.scss */
 div#exampleInputEmail1 {
   color: #0096ff;
 }
 
-/* line 448, ../sass/screen.scss */
+/* line 457, ../sass/screen.scss */
 input#first-name, input#last-name, input#exampleInputEmail1 {
   background: rgba(0, 153, 255, 0.1);
   border: 0px !important;
 }
 
-/* line 453, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 .form-group {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 20px;
 }
 
-/* line 458, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 div#form-container {
   text-align: center;
   text-align: center;
@@ -697,50 +709,50 @@ div#form-container {
   background-color: white;
 }
 
-/* line 469, ../sass/screen.scss */
+/* line 478, ../sass/screen.scss */
 form {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 473, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 div#form {
   padding-top: 105px;
   z-index: 1;
   position: relative;
 }
 
-/* line 478, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
 .form-control {
   border-radius: 0px !important;
 }
 
-/* line 481, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .form-hex {
   fill: #FFFFFF;
   stroke: #E5E5E5;
   stroke-miterlimit: 10;
 }
 
-/* line 486, ../sass/screen.scss */
+/* line 495, ../sass/screen.scss */
 .form-hex-inner {
   fill: #0099CC;
 }
 
-/* line 490, ../sass/screen.scss */
+/* line 499, ../sass/screen.scss */
 div#form-top-icon > svg#Layer_1 {
   width: 40px;
   margin-top: -21px;
 }
 
-/* line 495, ../sass/screen.scss */
+/* line 504, ../sass/screen.scss */
 div#form-top-icon {
   margin-bottom: -25px;
   z-index: 0;
   text-align: center;
 }
 
-/* line 501, ../sass/screen.scss */
+/* line 510, ../sass/screen.scss */
 button.btn.btn-default {
   width: 100%;
   background: #0099cc;
@@ -749,24 +761,24 @@ button.btn.btn-default {
   margin-bottom: 35px;
 }
 
-/* line 510, ../sass/screen.scss */
+/* line 519, ../sass/screen.scss */
 div#contact-info {
   padding-top: 50px;
 }
 
-/* line 513, ../sass/screen.scss */
+/* line 522, ../sass/screen.scss */
 .social {
   fill: #424242;
 }
 
-/* line 516, ../sass/screen.scss */
+/* line 525, ../sass/screen.scss */
 .social-bkgd {
   fill: none;
   stroke: #0099CC;
   stroke-miterlimit: 10;
 }
 
-/* line 522, ../sass/screen.scss */
+/* line 531, ../sass/screen.scss */
 div#social-media {
   width: 110px;
   margin-left: 284px;
@@ -774,14 +786,14 @@ div#social-media {
   margin-bottom: -25px;
 }
 
-/* line 528, ../sass/screen.scss */
+/* line 537, ../sass/screen.scss */
 #map {
   width: 100%;
   height: 300px;
   z-index: 0;
 }
 
-/* line 534, ../sass/screen.scss */
+/* line 543, ../sass/screen.scss */
 div#map-column {
   width: 100%;
   padding-left: 0px;

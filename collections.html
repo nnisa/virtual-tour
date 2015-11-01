@@ -1,19 +1,73 @@
 <html>
 	<head>
-		<!-- Latest compiled and minified CSS -->
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 	    <!-- Optional theme -->
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
-	    <!-- Latest compiled and minified JavaScript -->
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-	    
+	    <!-- Latest compiled and minified JavaScript -->	    
 	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	    <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  		<link href="assets/owl-carousel/owl.carousel.css" rel="stylesheet">
+    	<link href="assets/owl-carousel/owl.theme.css" rel="stylesheet">
+    	<link href="assets/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    	<script src="assets/owl-carousel/owl.carousel.js"></script>
+
+	    <style type="text/css">
+	      #owl-demo .item{
+	        background: #3fbf79;
+	        padding: 30px 0px;
+	        margin: 10px;
+	        color: #FFF;
+	        -webkit-border-radius: 3px;
+	        -moz-border-radius: 3px;
+	        border-radius: 3px;
+	        text-align: center;
+	      }
+	      .customNavigation{
+	        text-align: center;
+	      }
+	      //use styles below to disable ugly selection
+	      .customNavigation a{
+	        -webkit-user-select: none;
+	        -khtml-user-select: none;
+	        -moz-user-select: none;
+	        -ms-user-select: none;
+	        user-select: none;
+	        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	      }
+	    </style>
+	    <script type="text/javascript">
+	      $(document).ready(function() {
+	        var owl = $("#owl-demo");
+	        owl.owlCarousel({
+	            autoPlay: 3000,
+	            items : 5, //10 items above 1000px browser width
+	            itemsDesktop : [1000,5], //5 items between 1000px and 901px
+	            itemsDesktopSmall : [900,3], // betweem 900px and 601px
+	            itemsTablet: [600,2], //2 items between 600 and 0
+	            itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+	        });
+	      });
+	    </script>
+
+	    <script type="text/javascript">
+			$(document).ready(function(){
+			    $(".owl-item").hover(function(){
+			        $(".item").removeClass('current-menu-item');
+			        $(".owl-item").removeClass('current-menu-item');
+			        $(".owl-item").css("background-color","transparent");
+			        $(this).addClass('current-menu-item');
+			        $(this).css("background-color","red");
+			        // var m = $(document).getElementById(this).style.background-color);
+			        // document.body.style.backgroundColor = m;
+			    });
+			});
+		</script>
 	</head>
 
 	<body>
+
 		<div class="col-md-12" id="header-placeholder">
 		</div>
     	<div class="container">
@@ -27,9 +81,12 @@
     		</div>
 
     		<div class="col-md-12" class="inner-slider">
+				<div id="owl-demo" class="owl-carousel owl-theme">
+			  			
 
 <!-- **************************************************** collection 1 starts ****************************************************  -->
-    			<div class="collection-slide-1">
+    			<div class="collection-slide-1" class="item current-menu-item">
+    				
 	    			<div class="hexagon">
 					  <div class="hexTop"></div>
 					  <div class="hexBottom"></div>
@@ -99,7 +156,7 @@
 <!-- **************************************************** collection 1 ends ****************************************************  -->
 
 <!-- **************************************************** collection 2 starts ****************************************************  -->
-    			<div class="collection-slide-2">
+    			<div class="collection-slide-2" class="item">
 	    			<div class="hexagon">
 					  <div class="hexTop"></div>
 					  <div class="hexBottom"></div>
@@ -170,7 +227,7 @@
 
 
 <!-- **************************************************** collection 3 starts ****************************************************  -->
-    			<div class="collection-slide-3">
+    			<div class="collection-slide-3" class="item">
 	    			<div class="hexagon">
 					  <div class="hexTop"></div>
 					  <div class="hexBottom"></div>
@@ -238,6 +295,147 @@
 				</div>
     		
 <!-- **************************************************** collection 3 ends ****************************************************  -->
+<!-- **************************************************** collection 4 starts ****************************************************  -->
+    			<div class="collection-slide-4" class="item">
+	    			<div class="hexagon">
+					  <div class="hexTop"></div>
+					  <div class="hexBottom"></div>
+					</div>
+					<div class="hexagon-border-section">
+
+						<svg version="1.1" class="collection-hexagon" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 88.3 102.1" style="enable-background:new 0 0 88.3 102.1;" xml:space="preserve">
+							<style type="text/css">
+								.st0{display:none;}
+								.st1{display:inline;}
+								.st2{display:inline;clip-path:url(#SVGID_2_);}
+								.st3{clip-path:url(#SVGID_6_);}
+							</style>
+							<g>
+								<g>
+									<g class="st0">
+										<defs>
+											<polygon id="SVGID_1_" points="165.7,29.7 202.6,8.4 239.5,29.7 239.5,72.3 202.6,93.6 165.7,72.3 				"/>
+										</defs>
+										<use xlink:href="#SVGID_1_"  style="display:inline;overflow:visible;fill:#FFFFFF;"/>
+										<clipPath id="SVGID_2_" class="st1">
+											<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+										</clipPath>
+										<g class="st2">
+											<defs>
+												<rect id="SVGID_3_" x="154" y="8.4" width="151.4" height="85.2"/>
+											</defs>
+											<use xlink:href="#SVGID_3_"  style="overflow:visible;fill:#FFFFFF;"/>
+											<clipPath id="SVGID_4_">
+												<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+											</clipPath>
+										</g>
+									</g>
+								</g>
+							</g>
+							<g>
+								<g>
+									<g>
+										<g>
+											<defs>
+												<polygon id="SVGID_5_" points="1.5,26.3 44.3,1.6 87,26.3 87,75.7 44.3,100.4 1.5,75.7 1.5,51 					"/>
+											</defs>
+											<clipPath id="SVGID_6_">
+												<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+											</clipPath>
+											<g class="st3">
+												<defs>
+													<rect id="SVGID_7_" x="-12" y="1.6" width="175.4" height="98.7"/>
+												</defs>
+												<clipPath id="SVGID_8_">
+													<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+												</clipPath>
+												
+													<use xlink:href="#SVGID_7_"  style="overflow:visible;fill:none;stroke:#0099CC;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3;"/>
+											</g>
+											
+												<use xlink:href="#SVGID_5_"  style="overflow:visible;fill:none;stroke:#0099CC;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3;"/>
+										</g>
+									</g>
+								</g>
+							</g>
+						</svg>
+					</div>
+				</div>
+    		
+<!-- **************************************************** collection 4 ends ****************************************************  -->
+
+<!-- **************************************************** collection 5 starts ****************************************************  -->
+    			<div class="collection-slide-5" class="item">
+	    			<div class="hexagon">
+					  <div class="hexTop"></div>
+					  <div class="hexBottom"></div>
+					</div>
+					<div class="hexagon-border-section">
+
+						<svg version="1.1" class="collection-hexagon" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 				viewBox="0 0 88.3 102.1" style="enable-background:new 0 0 88.3 102.1;" xml:space="preserve">
+							<style type="text/css">
+								.st0{display:none;}
+								.st1{display:inline;}
+								.st2{display:inline;clip-path:url(#SVGID_2_);}
+								.st3{clip-path:url(#SVGID_6_);}
+							</style>
+							<g>
+								<g>
+									<g class="st0">
+										<defs>
+											<polygon id="SVGID_1_" points="165.7,29.7 202.6,8.4 239.5,29.7 239.5,72.3 202.6,93.6 165.7,72.3 				"/>
+										</defs>
+										<use xlink:href="#SVGID_1_"  style="display:inline;overflow:visible;fill:#FFFFFF;"/>
+										<clipPath id="SVGID_2_" class="st1">
+											<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+										</clipPath>
+										<g class="st2">
+											<defs>
+												<rect id="SVGID_3_" x="154" y="8.4" width="151.4" height="85.2"/>
+											</defs>
+											<use xlink:href="#SVGID_3_"  style="overflow:visible;fill:#FFFFFF;"/>
+											<clipPath id="SVGID_4_">
+												<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+											</clipPath>
+										</g>
+									</g>
+								</g>
+							</g>
+							<g>
+								<g>
+									<g>
+										<g>
+											<defs>
+												<polygon id="SVGID_5_" points="1.5,26.3 44.3,1.6 87,26.3 87,75.7 44.3,100.4 1.5,75.7 1.5,51 					"/>
+											</defs>
+											<clipPath id="SVGID_6_">
+												<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+											</clipPath>
+											<g class="st3">
+												<defs>
+													<rect id="SVGID_7_" x="-12" y="1.6" width="175.4" height="98.7"/>
+												</defs>
+												<clipPath id="SVGID_8_">
+													<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+												</clipPath>
+												
+													<use xlink:href="#SVGID_7_"  style="overflow:visible;fill:none;stroke:#0099CC;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3;"/>
+											</g>
+											
+												<use xlink:href="#SVGID_5_"  style="overflow:visible;fill:none;stroke:#0099CC;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:3;"/>
+										</g>
+									</g>
+								</g>
+							</g>
+						</svg>
+					</div>
+				</div>
+    		
+<!-- **************************************************** collection 5 ends ****************************************************  -->
+
+				</div>
 			</div>
     	</div>
 	</body>
